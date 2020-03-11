@@ -1,27 +1,26 @@
 {
   "git.ignoreLimitWarning": true,
   "[javascript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
-  "editor.formatOnSave": true,
-  "editor.formatOnType": true,
-  "editor.formatOnPaste": true,
-  "editor.detectIndentation": false,
-  "editor.defaultFormatter": "octref.vetur",
-  "vetur.format.defaultFormatter.css": "prettier",
-  "vetur.format.defaultFormatter.postcss": "prettier",
-  "vetur.format.defaultFormatter.scss": "prettier",
-  "vetur.format.defaultFormatter.less": "prettier",
-  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
-  "vetur.format.defaultFormatter.js": "prettier",
-  "vetur.format.defaultFormatter.ts": "prettier",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+  "editor.formatOnSave": false,
+  "eslint.enable": true,
   "eslint.workingDirectories": [
     "./testapp/"
   ],
+  "files.associations": {
+    "*.vue": "vue"
+  },
   "eslint.options": {
-    "configFile": "./testapp/.eslintrc.js"
-  }
+    "configFile": ".eslintrc.js"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  //"vetur.validation.template": false
 }
